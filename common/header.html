@@ -1,0 +1,50 @@
+<a href="/24MEDICAL_2/index.html"><h1 class="l-header__title">24MEDICAL</h1></a>
+
+<div class="p-menu-trigger js-toggle-sp-menu">
+  <span class="p-menu-trigger__barger"></span>
+  <span class="p-menu-trigger__barger"></span>
+  <span class="p-menu-trigger__barger"></span>
+</div>
+<nav id="nav" class="l-nav js-toggle-sp-menu-target">
+  <ul class="c-menu">
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/index.html#about" class="c-menu__link">サービス</a>
+    </li>
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/pages/philosophy.html" class="c-menu__link">理念</a>
+    </li>
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/index.html#news" class="c-menu__link">お知らせ</a>
+    </li>
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/pages/corporate.html" class="c-menu__link"
+        >会社情報</a
+      >
+    </li>
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/pages/recruit.html" class="c-menu__link"
+        >採用情報</a
+      >
+    </li>
+    <li class="c-menu__item js-toggle-sp-menu-item">
+      <a href="/24MEDICAL_2/pages/inquiry.html" class="c-menu__link"
+        >お問い合わせ</a
+      >
+    </li>
+  </ul>
+</nav>
+<script>
+  $(function () {
+    // SPメニュー
+    $(".js-toggle-sp-menu").on("click", function () {
+      $(this).toggleClass("active");
+      $(".js-toggle-sp-menu-target").toggleClass("active");
+    });
+
+    // SPメニュー　項目をクリックしたら自動的に閉じる
+    $(".js-toggle-sp-menu-item").on("click", function () {
+      $(".js-toggle-sp-menu").toggleClass("active");
+      $(".js-toggle-sp-menu-target").toggleClass("active");
+    });
+  });
+</script>

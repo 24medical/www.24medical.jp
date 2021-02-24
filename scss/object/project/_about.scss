@@ -1,0 +1,54 @@
+// ==================================
+// about
+// ==================================
+.p-about {
+  &__title {
+    text-align: center;
+    font-size: $font-size_xxl;
+    color: $color_corp;
+    margin-bottom: 60px;
+    @include tb() {
+      font-size: $font-size_xl;
+    }
+    @include sp() {
+      text-align: left;
+      font-size: $font-size_l;
+      margin-bottom: $space_xl;
+    }
+  }
+
+  &__sub-title {
+    text-align: center;
+    font-size: $font-size_xl;
+    color: $color_corp;
+    margin-bottom: $space_l;
+    @include tb() {
+      text-align: left;
+      font-size: $font-size_l;
+      margin-bottom: $space_s;
+    }
+    @include sp() {
+      font-size: $font-size_l;
+    }
+  }
+
+  &__text {
+    font-size: $font-size_l;
+    margin-bottom: $space_3l;
+    padding: 0 $space_l;
+    @include sp() {
+      font-size: $font-size_m;
+      margin-bottom: $space_xl;
+    }
+  }
+
+  &__image {
+    padding: $space_s $space_l $space_xl $space_l;
+    @include tb() {
+      margin-bottom: $space_xxl;
+    }
+    @include sp() {
+      margin-bottom: $space_l;
+    }
+  }
+}

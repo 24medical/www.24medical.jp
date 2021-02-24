@@ -1,0 +1,32 @@
+// ==================================
+// hero
+// ==================================
+.p-hero {
+  height: $hero-height;
+  @include sp() {
+    height: $hero-height_sp;
+  }
+  display: block;
+
+  &__title {
+    text-align: center;
+    padding-top: 185px;
+    font-size: $font-size_3l;
+    color: $color_corp;
+    @include sp() {
+      padding-top: 110px;
+      font-size: $font-size_xxl;
+    }
+  }
+
+  &__paragraph {
+    font-size: $font-size_l;
+  }
+
+  &__br {
+    display: none;
+    @include sp() {
+      display: block;
+    }
+  }
+}
